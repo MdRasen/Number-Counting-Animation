@@ -1,0 +1,141 @@
+/* Project Name: Number Counting Animation
+Youtube: https://youtube.com/@devRasen
+Copyright: ©MdRasen */
+
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* General CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Custom CSS */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), #0b0b0b), url(assets/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 8%;
+}
+
+.container .header {
+  padding: 0 0 60px 0;
+}
+
+.header .title {
+  font-family: "Clicker Script", cursive;
+  font-size: 42px;
+  color: #ef7e39;
+}
+
+.header .sub-title {
+  font-size: 48px;
+  line-height: 1;
+}
+
+.container .counters {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.counters .counter {
+  width: 240px;
+  background-color: #fff;
+  color: #000;
+  padding: 30px 15px;
+  margin: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+}
+
+.counters .counter:hover {
+  box-shadow: rgba(229, 126, 57, 0.8) 0px 2px 8px 0px;
+  transform: translateY(-5px);
+}
+
+.counters .customer {
+  background-image: url(assets/counter_icon01.png);
+}
+
+.counters .project {
+  background-image: url(assets/counter_icon02.png);
+}
+
+.counters .employee {
+  background-image: url(assets/counter_icon03.png);
+}
+
+.counters .award {
+  background-image: url(assets/counter_icon04.png);
+}
+
+.counters .counter .number {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.counters .customer .number {
+  color: #fd297b;
+}
+
+.counters .project .number {
+  color: #2760dc;
+}
+
+.counters .employee .number {
+  color: #58c0cf;
+}
+
+.counters .award .number {
+  color: #a667f8;
+}
+
+.counters .counter .detail {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 620px) {
+  .container {
+    padding: 60px 6%;
+  }
+
+  .container .header {
+    padding: 0 0 40px 0;
+  }
+
+  .counters .counter {
+    width: 45%;
+  }
+}
+
+@media (max-width: 540px) {
+  .header .title {
+    font-size: 32px;
+  }
+
+  .header .sub-title {
+    font-size: 36px;
+  }
+
+  .counters .counter {
+    width: 80%;
+  }
+}
